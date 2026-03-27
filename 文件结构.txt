@@ -1,0 +1,13 @@
+langchain-master/
+├── day01/          # LangChain环境搭建 + 模型调用
+├── day02/          # 提示词模板 + 输出解析
+├── day03/          # AI记忆功能
+├── day04/          # 外部API调用（你刚学的重点）
+├── day05/          # RAG基础：文档加载+切分
+├── day06/          # RAG：向量库+检索
+├── day07/          # RAG实战：本地知识库
+├── day08~day14/    # Agent智能体系统学习
+├── day15~day30/    # 进阶+项目+部署
+├── .env            # 存放密钥（不上传GitHub）
+├── .gitignore      # 忽略不必要文件
+└── README.md       # 每日学习记录
