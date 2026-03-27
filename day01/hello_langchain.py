@@ -6,9 +6,9 @@ load_dotenv()
 
 def main():
     llm = ChatOpenAI(
-        model="gpt-3.5-turbo",
+        model="qwen-max",
         api_key=os.getenv("OPENAI_API_KEY"),
-        temperature=0.7
+        temperature=0.7,
     )
     response = llm.invoke("你好，我正在学习 LangChain")
     print("AI 回复：", response.content)
