@@ -1,13 +1,55 @@
-langchain-master/
-├── day01/          # LangChain环境搭建 + 模型调用
-├── day02/          # 提示词模板 + 输出解析
-├── day03/          # AI记忆功能
-├── day04/          # 外部API调用（你刚学的重点）
-├── day05/          # RAG基础：文档加载+切分
-├── day06/          # RAG：向量库+检索
-├── day07/          # RAG实战：本地知识库
-├── day08~day14/    # Agent智能体系统学习
-├── day15~day30/    # 进阶+项目+部署
-├── .env            # 存放密钥（不上传GitHub）
-├── .gitignore      # 忽略不必要文件
-└── README.md       # 每日学习记录
+langchain-30day-master/
+├── day01/     环境搭建 + LLM 调用
+├── day02/     提示词模板 + 输出解析
+├── day03/     对话记忆 Memory
+├── day04/     AI 调用外部 API
+├── day05/     RAG 文档加载与切分
+├── day06/     RAG 向量库与检索
+├── day07/     RAG 完整知识库
+├── day08/     Agent 基础与工具机制
+├── day09/     多工具调用 + 结构化参数
+├── day10/     联网搜索工具（ Tavily / 免费搜索 ）
+├── day11/     Agent + 记忆（多轮工具调用）
+├── day12/     读取 Excel / CSV 数据
+├── day13/     连接 MySQL / SQLite 数据库
+├── day14/     自定义复杂工具（API 鉴权、业务接口）
+├── day15/     LCEL 深度语法（管道、路由、并行）
+├── day16/     流式输出（打字机效果）
+├── day17/     RAG 优化：重排序 Rerank
+├── day18/     RAG 多文件批量处理（PDF/Word/TXT）
+├── day19/     多模态：图片理解 + 文本生成
+├── day20/     函数调用 Function Calling 底层
+├── day21/     自主规划 Agent（ReAct）
+├── day22/     多 Agent 协作（简单版）
+├── day23/     异步处理 asyncio 加速
+├── day24/     日志、监控、回调 Callback
+├── day25/     接入国内大模型（DeepSeek/通义/豆包）
+├── day26/     本地向量库持久化
+├── day27/     FastAPI 打包接口
+├── day28/     Gradio 前端页面
+├── day29/     项目部署（Windows 服务 + 端口暴露）
+├── day30/     综合实战：企业级智能问答助手
+├── .env
+├── .gitignore
+└── README.md
+
+create_project.bat
+
+@echo off
+echo ==============================================
+echo    LangChain 30天项目 自动创建脚本 (Windows)
+echo ==============================================
+
+mkdir langchain-30day-master
+cd langchain-30day-master
+
+mkdir day01 day02 day03 day04 day05 day06 day07 day08 day09 day10
+mkdir day11 day12 day13 day14 day15 day16 day17 day18 day19 day20
+mkdir day21 day22 day23 day24 day25 day26 day27 day28 day29 day30
+
+type nul > .env
+type nul > .gitignore
+type nul > README.md
+
+echo 项目创建成功！
+pause
