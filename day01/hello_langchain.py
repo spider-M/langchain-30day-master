@@ -1,13 +1,14 @@
-from dotenv import load_dotenv
+
 from langchain_openai import ChatOpenAI
 import os
 
-load_dotenv()
+
 
 def main():
     llm = ChatOpenAI(
-        model="qwen-max",
-        api_key=os.getenv("OPENAI_API_KEY"),
+        model="qwen3-max",
+        api_key=os.getenv("DASHSCOPE_API_KEY"),
+        base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
         temperature=0.7,
     )
     response = llm.invoke("你好，我正在学习 LangChain")

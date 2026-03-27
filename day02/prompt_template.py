@@ -1,5 +1,4 @@
-# 读取.env文件，加载密钥等环境变量
-from dotenv import load_dotenv
+
 # 提示词模板：定义固定的提问格式
 from langchain_core.prompts import PromptTemplate
 # 大模型调用工具：对接通义千问/GPT
@@ -9,8 +8,7 @@ from langchain_core.output_parsers import StrOutputParser
 # 系统库：读取环境变量
 import os
 
-# 加载 .env 文件中的配置
-load_dotenv()
+
 
 def main():
     # ==========================
