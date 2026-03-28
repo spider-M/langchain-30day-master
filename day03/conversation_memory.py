@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
 # 文件编码声明，确保中文可以正常显示
-
-# 读取 .env 环境变量文件（用于安全加载 API Key）
-from dotenv import load_dotenv
-
 # 对接大模型（通义千问 / GPT 都用这个类）
 from langchain_openai import ChatOpenAI
 
@@ -25,9 +21,6 @@ from typing import Dict
 # 系统库，用于读取环境变量
 import os
 
-# ===================== 加载环境变量 =====================
-# 从 .env 文件读取 DASHSCOPE_API_KEY 等配置
-load_dotenv()
 
 # ===================== 主函数 =====================
 def main() -> None:
